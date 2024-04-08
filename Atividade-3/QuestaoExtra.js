@@ -1,12 +1,12 @@
 // Taxas de conversão fixas para cada dia da semana
 let taxas = {
-    "Domingo": {"Dólar": 0.19, "Euro": 0.16},
     "Segunda": {"Dólar": 0.20, "Euro": 0.17},
     "Terça": {"Dólar": 0.21, "Euro": 0.18},
     "Quarta": {"Dólar": 0.22, "Euro": 0.19},
     "Quinta": {"Dólar": 0.23, "Euro": 0.20},
     "Sexta": {"Dólar": 0.24, "Euro": 0.21},
-    "Sábado": {"Dólar": 0.25, "Euro": 0.22}
+    "Sábado": {"Dólar": 0.25, "Euro": 0.22},
+    "Domingo": {"Dólar": 0.19, "Euro": 0.16}
 };
 
 // Solicita ao usuário o valor em Real
