@@ -7,7 +7,6 @@ function adicionarVoto() {
     } else {
         alert("Número de candidato inválido. Por favor, digite 1, 2 ou 3.");
     }
-    exibirResultado();
 }
 
 function exibirResultado() {
