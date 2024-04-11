@@ -7,7 +7,10 @@ function adicionarVoto() {
     } else {
         alert("Número de candidato inválido. Por favor, digite 1, 2 ou 3.");
     }
+    exibirResultado();
+}
 
+function exibirResultado() {
     let maxVotos = Math.max.apply(null, votos);
     let vencedores = [];
     for (let i = 0; i < votos.length; i++) {
