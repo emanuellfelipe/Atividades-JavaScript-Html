@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Cadastro de Produtos</h2>
+
+<p>Insira as informações do produto:</p>
+
+Nome: <input type="text" id="nomeProduto"><br>
+Categoria: <input type="text" id="CategoriaProduto"><br>
+Valor: <input type="number" id="valorProduto"><br>
+<button onclick="adicionarProduto()">Adicionar Produto</button>
+
+<h3>Consulta de Produtos por Categoria</h3>
+
+<p>Insira o Categoria de produto que deseja consultar:</p>
+
+Categoria: <input type="text" id="consultaCategoria"><br>
+<button onclick="consultarProdutos()">Consultar Produtos</button>
+
+<h3>Produtos Cadastrados:</h3>
+
+<p id="produtos"></p>
+
+<script src="Cadastro.js"></script>
+
+</body>
+</html>
