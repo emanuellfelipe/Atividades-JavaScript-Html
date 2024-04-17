@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Vendedores</title>
+</head>
+<body>
+    <h1>Cadastro de Vendedores</h1>
+    <form id="vendedorForm">
+        Nome: <input type="text" id="nomeVendedor"><br>
+        Matrícula: <input type="text" id="matricula"><br>
+        <input type="button" value="Cadastrar Vendedor" onclick="cadastrarVendedor()">
+    </form>
+    Consultar vendedor pela matrícula: <input type="text" id="consultaVendedor">
+    <button onclick="consultarVendedor()">Consultar</button>
+    <p id="detalhesVendedor"></p>
+    <a href="TelaInicial.html">Voltar</a>
+    <script src="App.js"></script>
+</body>
+</html>

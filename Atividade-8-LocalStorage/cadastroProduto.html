@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Produtos</title>
+</head>
+<body>
+    <h1>Cadastro de Produtos</h1>
+    <form id="produtoForm">
+        Nome: <input type="text" id="nomeProduto"><br>
+        Valor: <input type="number" id="valorProduto"><br>
+        Categoria: <input type="text" id="categoriaProduto"><br>
+        <input type="button" value="Cadastrar Produto" onclick="cadastrarProduto()">
+    </form>
+    <button onclick="listarProdutos()">Listar Produtos</button>
+    <br>
+    Filtrar por categoria: <input type="text" id="filtroCategoria">
+    <button onclick="filtrarProdutos()">Filtrar</button>
+    <ul id="listaProdutos"></ul>
+    <a href="TelaInicial.html">Voltar</a>
+    <script src="App.js"></script>
+</body>
+</html>
