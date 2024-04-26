@@ -43,6 +43,8 @@ CREATE TABLE Categoria (
 -- Inserção de registros na tabela de Clientes
 INSERT INTO Clientes (nome_completo, data_nascimento, cpf, origem, score)
 VALUES
+    ('Elizabeth Melo Girão', '1975-08-10', '111.222.333-44', 'Loja', 720),
+    ('Muriel Mondragão Vilarinho', '1978-05-20', '444.555.666-77', 'Site', 800),
     ('Maria Silva', '1990-05-15', '123.456.789-00', 'Loja', 800),
     ('João Santos', '1985-08-20', '987.654.321-00', 'Site', 650),
     ('Ana Pereira', '2000-03-10', '111.222.333-44', 'Loja', 720);
@@ -75,3 +77,9 @@ VALUES
     ('Carlos Silva', 'V12345'),
     ('Ana Rodrigues', 'V67890'),
     ('Pedro Santos', 'V54321');
+
+-- Inserção de registros na tabela de Pedidos
+INSERT INTO Pedidos (cliente_id, produto_id, quantidade, data_pedido)
+VALUES
+    (1, 1, 2, '2020-05-03'),
+    (2, 3, 1, '2020-05-04');
