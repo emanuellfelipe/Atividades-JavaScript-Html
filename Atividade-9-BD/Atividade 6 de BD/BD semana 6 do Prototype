@@ -1,0 +1,48 @@
+-- Criação da tabela de Usuario
+CREATE TABLE Usuario (
+    id_usuario SERIAL PRIMARY KEY,
+    nome_usuario VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL,
+    id_perfil INTEGER NOT NULL,
+    CHECK (id_perfil > 0)
+);
+
+-- Criação da tabela de Perfil
+CREATE TABLE Perfil (
+    id_perfil SERIAL PRIMARY KEY,
+    nome_perfil VARCHAR(255) NOT NULL,
+    descricao VARCHAR(255) NOT NULL
+);
+
+-- Criação da tabela de Modulos
+CREATE TABLE Modulos (
+    id_modulo SERIAL PRIMARY KEY,
+    nome_modulo VARCHAR(255) NOT NULL,
+    descricao VARCHAR(255) NOT NULL,
+    id_transacao INTEGER NOT NULL,
+    CHECK (id_transacao > 0)
+);
+
+-- Criação da tabela de Transacoes
+CREATE TABLE Transacoes (
+    id_transacoes SERIAL PRIMARY KEY,
+    nome_transacao VARCHAR(255) NOT NULL,
+    descricao VARCHAR(255) NOT NULL,
+    id_perfis INTEGER NOT NULL,
+    CHECK (id_perfis > 0)
+);
+
+-- Criação da tabela de Funcoes
+CREATE TABLE Funcoes (
+    id_funcoes SERIAL PRIMARY KEY,
+    nome_funcoes VARCHAR(255) NOT NULL,
+    descricao VARCHAR(255) NOT NULL,
+    id_modulos INTEGER NOT NULL,
+    CHECK (id_modulos > 0)
+);
+
+ALTER TABLE "usuario" ADD CONSTRAINT "usuario_fk4" FOREIGN KEY ("id_perfil") REFERENCES "perfil"("id_perfil");
+ALTER TABLE "perfil" ADD CONSTRAINT "perfil_fk0" FOREIGN KEY ("id_perfil") REFERENCES "transacoes"("id_perfis");
+ALTER TABLE "modulos" ADD CONSTRAINT "modulos_fk0" FOREIGN KEY ("id_modulo") REFERENCES "funcoes"("id_modulos");
+ALTER TABLE "transacoes" ADD CONSTRAINT "transacoes_fk0" FOREIGN KEY ("id_transacoes") REFERENCES "modulos"("id_transacao");
