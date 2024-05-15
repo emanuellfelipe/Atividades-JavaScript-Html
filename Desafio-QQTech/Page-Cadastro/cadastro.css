@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    height: 1024px;
+    background-color: #B2FDBA;
+    font-family: 'Roboto', sans-serif;
+}
+#menu-lateral {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: #FFFFFF;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#logo-icons {
+    margin-bottom: 20px;
+}
+#logo, .menu-icon {
+    margin: 10px;
+}
+.botao-menu {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #333;
+    background-color: #FFFFFF;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-weight: bold;
+}
+.botao-menu.active {
+    background-color: #dde1e6;
+}
+.botao-menu img {
+    margin-right: 10px;
+}
+#main-content {
+    margin-left: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 210px);
+    height: calc(100% - 60px); 
+}
+#formulario {
+    background-color: #fff;
+    padding: 20px 80px;
+    border-radius: 10px;
+    border: 2px solid #01AB45;
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+form input, form select {
+    height: 48px;
+    background-color: #F2F4F8;
+    border: none;
+    border-bottom: 1px solid #C1C7CD;
+    font-size: 14px;
+    padding-left: 10px; 
+}
+#nome-sobrenome {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+#nome-sobrenome div {
+    flex: 1;
+}
+#senha-div {
+    position: relative;
+    width: 520px;
+}
+#senha-botao {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 12px;
+    border: none;
+    background: none;
+}
+#botao-cadastrar {
+    background-color: #01AB45; 
+    color: white;
+    border-radius: 8px;
+    width: 290px;
+    height: 44px;
+    font-weight: bold;
+    border: none;
+}
+#botao-cancelar {
+    background-color: white;
+    color: #01AB45; 
+    border: 2px solid #01AB45;
+    border-radius: 8px;
+    width: 290px;
+    height: 44px;
+    font-weight: bold;
+}
+#botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 8px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 210px;
+    width: calc(100% - 210px);
+    height: 60px; 
+    background-color: #025400;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+#social-icons img {
+    margin-left: 10px;
+}
