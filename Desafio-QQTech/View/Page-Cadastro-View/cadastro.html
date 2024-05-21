@@ -2,7 +2,6 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="cadastro.css">
-    <script src="cadastro.js"></script>
 </head>
 <body>
     <div id="menu-lateral">
@@ -36,10 +35,10 @@
                 <div id="senha-div">
                     <input type="password" id="senha" placeholder="********" required autocomplete="off">
                     <button type="button" id="senha-botao" onclick="togglePasswordVisibility()">
-                        <img src="C:\Users\980235\Desktop\Atividades-QQTech-Aulas\Desafio-QQTech\View\Icones-Imagens-View\eye-icon.png" class="green" alt="Ícone de olho">
+                        <img src="C:\Users\980235\Desktop\Atividades-QQTech-Aulas\Desafio-QQTech\View\Icones-Imagens-View\eye-icon.png" id="eye-icon" alt="Ícone de olho">
                     </button>
                 </div>
-                
+                <script src="cadastro.js"></script>                 
                 <label for="perfis">Perfis Associados</label>
                 <select id="perfis" required>
                     <option value="perfil1">Perfil 1</option>
@@ -62,5 +61,6 @@
             <img src="C:\Users\980235\Desktop\Atividades-QQTech-Aulas\Desafio-QQTech\View\Icones-Imagens-View\youtube-icon.png">
         </div>
     </footer>
+
 </body>
 </html>

@@ -1,43 +1,37 @@
-// Seleciona o formulário
-var form = document.querySelector('form');
+document.addEventListener('DOMContentLoaded', function() {
+    var form = document.querySelector('form');
 
-// Adiciona um ouvinte de evento ao formulário
-form.addEventListener('submit', function(event) {
-    // Seleciona todos os campos de entrada
-    var inputs = document.querySelectorAll('input');
+    form.addEventListener('submit', function(event) {
+        var inputs = document.querySelectorAll('input');
+        var allValid = true;
 
-    // Verifica cada campo de entrada
-    for (var i = 0; i < inputs.length; i++) {
-        if (inputs[i].value === '') { // Se o campo de entrada estiver vazio
-            event.preventDefault(); // Impede que o formulário seja enviado
-            inputs[i].classList.add('invalid'); // Adiciona a classe 'invalid'
+        inputs.forEach(function(input) {
+            if (input.value.trim() === '') {
+                allValid = false;
+                input.classList.add('invalid');
+            } else {
+                input.classList.remove('invalid');
+            }
+        });
+
+        if (!allValid) {
+            event.preventDefault();
+        }
+    });
+
+    function togglePasswordVisibility() {
+        const senhaInput = document.getElementById('senha');
+        const eyeIcon = document.getElementById('eye-icon');
+
+        if (senhaInput.type === 'password') {
+            senhaInput.type = 'text';
+            eyeIcon.src = 'C:\Users/980235\Desktop\Atividades-QQTech-Aulas\Desafio-QQTech\View\Icones-Imagens-View\eye-icon-green.png';
         } else {
-            inputs[i].classList.remove('invalid'); // Remove a classe 'invalid'
+            senhaInput.type = 'password';
+            eyeIcon.src = 'C:\Users/980235\Desktop\Atividades-QQTech-Aulas\Desafio-QQTech\View\Icones-Imagens-View\eye-icon-green.png';
         }
     }
+
+    var eyeButton = document.getElementById('senha-botao');
+    eyeButton.addEventListener('click', togglePasswordVisibility);
 });
-function togglePasswordVisibility() {
-    const senhaInput = document.getElementById('senha');
-    if (senhaInput.type === 'password') {
-        senhaInput.type = 'text';
-    } else {
-        senhaInput.type = 'password';
-    }
-
-    // Verifica se a classe 'green' está presente
-    const eyeIcon = document.querySelector('#senha-botao img');
-    console.log('Classe green aplicada:', eyeIcon.classList.contains('green'));
-}
-
-// Seleciona o botão do olho
-var eyeButton = document.getElementById('senha-botao');
-
-// Seleciona o campo de senha
-var senhaInput = document.getElementById('senha');
-
-// Seleciona a imagem do ícone do olho
-var eyeIcon = eyeButton.querySelector('img');
-
-// Adiciona um ouvinte de evento ao botão do olho
-eyeButton.addEventListener('click', togglePasswordVisibility);
-
