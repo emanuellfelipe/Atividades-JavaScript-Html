@@ -1,137 +1,532 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    .group-child {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: #b2fdba;
+        width: 1177.4px;
+        height: 1047px;
+    }
+    .lojas-quero-quero {
+        flex: 1;
+        position: relative;
+        line-height: 140%;
+    }
+    .menu-item {
+        width: 66px;
+        height: 40px;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 32px;
+    }
+    .icon-jam-icons-outline-l {
+        width: 24px;
+        position: relative;
+        height: 24px;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+    .social-icons {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 16px;
+    }
+    .footer {
+        position: absolute;
+        top: 911px;
+        left: 0px;
+        background-color: #025400;
+        width: 1177.4px;
+        height: 136px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 48px 80px;
+        box-sizing: border-box;
+        gap: 32px;
+    }
+    .rectangle-parent {
+        position: absolute;
+        top: 0px;
+        left: 254.58px;
+        width: 1177.4px;
+        height: 1047px;
+    }
+    .section {
+        position: absolute;
+        top: 131.25px;
+        left: 0px;
+        background-color: #b2fdba;
+        width: 1432px;
+        height: 787.5px;
+    }
+    .group-parent {
+        position: absolute;
+        top: -13px;
+        left: -7px;
+        width: 1432px;
+        height: 1047px;
+        color: #fff;
+    }
+    .queroquerologo-icon {
+        position: absolute;
+        top: 0px;
+        left: 80px;
+        width: 401px;
+        height: 75px;
+        object-fit: cover;
+    }
+    .sep {
+        position: absolute;
+        top: -0.5px;
+        left: 28.5px;
+        border-top: 1px solid rgba(221, 225, 230, 0);
+        box-sizing: border-box;
+        width: 521px;
+        height: 1px;
+    }
+    .secondary-headline {
+        align-self: stretch;
+        position: relative;
+        line-height: 110%;
+    }
+    .top {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .paragraph {
+        align-self: stretch;
+        position: relative;
+        font-size: 18px;
+        line-height: 140%;
+    }
+    .section-text {
+        position: absolute;
+        top: 95px;
+        left: 29px;
+        width: 520px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0px 0px 24px;
+        box-sizing: border-box;
+        gap: 8px;
+        text-align: center;
+        font-size: 42px;
+    }
+    .label {
+        align-self: stretch;
+        position: relative;
+        line-height: 140%;
+    }
+    .field {
+        align-self: stretch;
+        background-color: #f2f4f8;
+        border-bottom: 1px solid #c1c7cd;
+        box-sizing: border-box;
+        height: 48px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 12px 16px;
+        font-size: 16px;
+        color: #697077;
+    }
+    .label-and-field {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+    .text-field {
+        position: absolute;
+        top: 193px;
+        left: 29px;
+        width: 520px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .text-field1 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .fields-group {
+        align-self: stretch;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 16px;
+    }
+    .text-field3 {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .field4 {
+        align-self: stretch;
+        background-color: #f2f4f8;
+        border-bottom: 1px solid #c1c7cd;
+        box-sizing: border-box;
+        height: 48px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 12px 16px;
+        gap: 8px;
+        font-size: 16px;
+        color: #697077;
+    }
+    .form-5-fields-checkbox-b {
+        position: absolute;
+        top: 279px;
+        left: 29px;
+        width: 520px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+    }
+    .label-and-field5 {
+        position: absolute;
+        top: 600px;
+        left: 29px;
+        width: 520px;
+        height: 20px;
+    }
+    .label5 {
+        position: absolute;
+        top: 630px;
+        left: 29px;
+        line-height: 140%;
+        display: inline-block;
+        width: 520px;
+    }
+    .text5 {
+        position: relative;
+        line-height: 24px;
+    }
+    .supporting-text {
+        width: 54px;
+        position: relative;
+        line-height: 24px;
+        color: #475467;
+        display: none;
+    }
+    .content {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+    .chevron-down-icon {
+        width: 20px;
+        position: relative;
+        height: 20px;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+    .icon {
+        width: 10px;
+        position: relative;
+        height: 5px;
+    }
+    .input {
+        position: absolute;
+        top: 568px;
+        left: 29px;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        background-color: #f2f4f8;
+        border-bottom: 1px solid #d0d5dd;
+        box-sizing: border-box;
+        width: 520px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px 14px;
+        gap: 8px;
+        font-size: 16px;
+        color: #101828;
+        font-family: Inter;
+    }
+    .label6 {
+        position: absolute;
+        top: 546px;
+        left: 29px;
+        line-height: 140%;
+        display: inline-block;
+        width: 520px;
+    }
+    .sep1 {
+        position: absolute;
+        top: 771.5px;
+        left: 28.5px;
+        border-top: 1px solid #dde1e6;
+        box-sizing: border-box;
+        width: 521px;
+        height: 1px;
+    }
+    .input1 {
+        position: absolute;
+        top: 657px;
+        left: 29px;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        background-color: #f2f4f8;
+        border-bottom: 1px solid #d0d5dd;
+        box-sizing: border-box;
+        width: 520px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px 14px;
+        gap: 8px;
+        font-size: 16px;
+        color: #101828;
+        font-family: Inter;
+    }
+    .queroquerologo-parent {
+        position: absolute;
+        top: 33px;
+        left: 0.5px;
+        width: 578px;
+        height: 816px;
+    }
+    .page-content-inner {
+        width: 578px;
+        position: relative;
+        height: 816px;
+    }
+    .page-content {
+        position: absolute;
+        top: 40px;
+        left: 498px;
+        border-radius: 16px;
+        background-color: #fff;
+        border: 2px solid #01ab45;
+        box-sizing: border-box;
+        width: 715px;
+        height: 828px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 44px 80px 80px;
+    }
+    .button {
+        width: 144px;
+        height: 48px;
+        display: none;
+    }
+    .buttons-group {
+        position: absolute;
+        top: 0px;
+        left: 1235px;
+        width: 182px;
+        height: 106px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .queroquerologo-removebg-previe-icon {
+        width: 181px;
+        position: relative;
+        height: 39px;
+        object-fit: cover;
+    }
+    .user-thumb {
+        width: 48px;
+        border-radius: 100px;
+        background-color: #f2f4f8;
+        height: 48px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .button1 {
+        height: 48px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 12px;
+        box-sizing: border-box;
+    }
+    .buttons-group1 {
+        align-self: stretch;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-item2 {
+        flex: 1;
+        position: relative;
+        line-height: 100%;
+        font-weight: 500;
+    }
+    .menu-item1 {
+        align-self: stretch;
+        border-bottom: 1px solid #f2f4f8;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 12px 8px;
+        gap: 8px;
+        cursor: pointer;
+    }
+    .menu-item3 {
+        align-self: stretch;
+        background-color: #fff;
+        border-bottom: 1px solid #fff;
+        border-left: 2px solid #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 12px 8px;
+        gap: 8px;
+    }
+    .component-1-icon {
+        width: 24px;
+        position: relative;
+        height: 24px;
+    }
+    .menu-item5 {
+        align-self: stretch;
+        background-color: #f5f5f5;
+        border: 1px solid #f2f4f8;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 12px 8px;
+        gap: 8px;
+    }
+    .menu-item7 {
+        align-self: stretch;
+        border-bottom: 1px solid #f2f4f8;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 12px 8px;
+        gap: 8px;
+    }
+    .menu1 {
+        align-self: stretch;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .desktop-vertical-logged-in {
+        position: absolute;
+        top: 0px;
+        left: -8px;
+        background-color: #fff;
+        border-right: 1px solid #dde1e6;
+        border-left: 1px solid #dde1e6;
+        box-sizing: border-box;
+        width: 256px;
+        height: 1034px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 24px 16px;
+        gap: 16px;
+        font-size: 16px;
+    }
+    .text7 {
+        position: relative;
+        line-height: 24px;
+        font-weight: 600;
+    }
+    .button2 {
+        flex: 1;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 8px;
+        background-color: #fff;
+        border: 1px solid #d0d5dd;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 18px;
+    }
+    .button3 {
+        flex: 1;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 8px;
+        background-color: #01ab45;
+        border: 1px solid rgba(124, 124, 124, 0.24);
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 18px;
+        color: #fff;
+    }
+    .content2 {
+        position: absolute;
+        top: 800px;
+        left: 536px;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        width: 640px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0px 24px;
+        gap: 12px;
+        font-size: 16px;
+        color: #01ab45;
+        font-family: Inter;
+    }
+    .tela-cadastro-usurio-admin {
+        width: 100%;
+        position: relative;
+        height: 1024px;
+        text-align: left;
+        font-size: 14px;
+        color: #21272a;
+        font-family: Roboto;
+    }
 
-body {
-    display: flex;
-    justify-content: space-between;
-    width: 1440px;
-    height: 1024px;
-    background-color: #B2FDBA;
-    font-family: 'Roboto', sans-serif;
-}
-#menu-lateral {
-    position: fixed;
-    width: 200px;
-    height: 100%;
-    background-color: #FFFFFF;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#logo-icons {
-    margin-bottom: 20px;
-}
-#logo, .menu-icon {
-    margin: 10px;
-}
-.botao-menu {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    color: #333;
-    background-color: #FFFFFF;
-    width: 100%;
-    text-align: left;
-    border: none;
-    font-weight: bold;
-}
-.botao-menu.active {
-    background-color: #dde1e6;
-}
-.botao-menu img {
-    margin-right: 10px;
-}
-#main-content {
-    margin-left: 210px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(100% - 210px);
-    height: calc(100% - 60px); 
-}
-#formulario {
-    background-color: #fff;
-    padding: 20px 80px;
-    border-radius: 10px;
-    border: 2px solid #01AB45;
-    width: 50%; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-}
-form input, form select {
-    height: 48px;
-    background-color: #F2F4F8;
-    border: none;
-    border-bottom: 1px solid #C1C7CD;
-    font-size: 14px;
-    padding-left: 10px; 
-}
-#nome-sobrenome {
-    display: flex;
-    flex-direction: column; 
-    gap: 10px;
-}
-#nome-sobrenome div {
-    flex: 1;
-}
-#senha-div {
-    position: relative;
-    width: 520px;
-}
-#senha-botao {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 12px;
-    border: none;
-    background: none;
-}
-#botao-cadastrar {
-    background-color: #01AB45; 
-    color: white;
-    border-radius: 8px;
-    width: 290px;
-    height: 44px;
-    font-weight: bold;
-    border: none;
-}
-#botao-cancelar {
-    background-color: white;
-    color: #01AB45; 
-    border: 2px solid #01AB45;
-    border-radius: 8px;
-    width: 290px;
-    height: 44px;
-    font-weight: bold;
-}
-#botoes {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 8px;
-}
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 210px;
-    width: calc(100% - 210px);
-    height: 60px; 
-    background-color: #025400;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-#social-icons img {
-    margin-left: 10px;
-}
