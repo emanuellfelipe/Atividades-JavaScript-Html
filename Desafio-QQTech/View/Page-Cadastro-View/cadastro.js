@@ -16,3 +16,28 @@ form.addEventListener('submit', function(event) {
         }
     }
 });
+function togglePasswordVisibility() {
+    const senhaInput = document.getElementById('senha');
+    if (senhaInput.type === 'password') {
+        senhaInput.type = 'text';
+    } else {
+        senhaInput.type = 'password';
+    }
+
+    // Verifica se a classe 'green' está presente
+    const eyeIcon = document.querySelector('#senha-botao img');
+    console.log('Classe green aplicada:', eyeIcon.classList.contains('green'));
+}
+
+// Seleciona o botão do olho
+var eyeButton = document.getElementById('senha-botao');
+
+// Seleciona o campo de senha
+var senhaInput = document.getElementById('senha');
+
+// Seleciona a imagem do ícone do olho
+var eyeIcon = eyeButton.querySelector('img');
+
+// Adiciona um ouvinte de evento ao botão do olho
+eyeButton.addEventListener('click', togglePasswordVisibility);
+

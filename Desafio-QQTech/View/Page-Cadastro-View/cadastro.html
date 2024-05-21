@@ -26,33 +26,24 @@
             <form>
                 <label for="matricula">Matrícula</label>
                 <input type="number" id="matricula" placeholder="********" required>
-                <div id="nome-sobrenome">
-                    <div>
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" placeholder="Nome" required>
-                    </div>
-                    <div>
-                        <label for="sobrenome">Sobrenome</label>
-                        <input type="text" id="sobrenome" placeholder="Sobrenome" required>
-                    </div>
-                </div>
+                <label for="nome-completo">Nome Completo</label>
+                <input type="text" id="nome-completo" placeholder="Nome Completo" required>
+                <label for="nome-usuario">Nome de Usuário</label>
+                <input type="text" id="nome-usuario" placeholder="Nome de Usuário" required>
                 <label for="email">Email</label>
                 <input type="email" id="email" placeholder="exemplo.queroquero@gmail.com" required>
                 <label for="senha">Senha Padrão</label>
                 <div id="senha-div">
-                    <input type="password" id="senha" placeholder="********" required>
-                    <button type="button" id="senha-botao"><img src="C:\Users\980235\Desktop\Atividades-QQTech-Aulas\Desafio-QQTech\View\Icones-Imagens-View\eye-icon.png"></button>
+                    <input type="password" id="senha" placeholder="********" required autocomplete="off">
+                    <button type="button" id="senha-botao" onclick="togglePasswordVisibility()">
+                        <img src="C:\Users\980235\Desktop\Atividades-QQTech-Aulas\Desafio-QQTech\View\Icones-Imagens-View\eye-icon.png" class="green" alt="Ícone de olho">
+                    </button>
                 </div>
+                
                 <label for="perfis">Perfis Associados</label>
                 <select id="perfis" required>
                     <option value="perfil1">Perfil 1</option>
                     <option value="perfil2">Perfil 2</option>
-                </select>
-                <label for="setor">Setor do Usuário</label>
-                <select id="setor" required>
-                    <option value="adm">Adm</option>
-                    <option value="rh">RH</option>
-                    <option value="financeiro">Financeiro</option>
                 </select>
                 <div id="botoes">
                     <button type="reset" id="botao-cancelar">Cancelar</button>
@@ -61,7 +52,6 @@
             </form>
         </div>
     </div>
-    
     <footer>
         <p>Lojas Quero Quero @ 2024. Todos os Direitos Reservados</p>
         <div id="social-icons">
