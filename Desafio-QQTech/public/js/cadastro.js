@@ -35,11 +35,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (senhaInput.type === 'password') {
             senhaInput.type = 'text';
-            eyeIcon.src = 'C:/Users/980235/Desktop/Atividades-QQTech-Aulas/Desafio-QQTech/View/Icones-Imagens-View/eye-icon-green.png';
+            eyeIcon.src = 'C://Users//980235//Desktop//Atividades-QQTech-Aulas//Desafio-QQTech//public//images//eye-icon-green.png';
 
         } else {
             senhaInput.type = 'password';
-            eyeIcon.src = 'C:\\Users\\980235\\Desktop\\Atividades-QQTech-Aulas\\Desafio-QQTech\\View\\Icones-Imagens-View\\eye-icon.png';
+            eyeIcon.src = 'C://Users//980235//Desktop//Atividades-QQTech-Aulas//Desafio-QQTech//public//images//eye-icon.png';
         }
     }
 
