@@ -135,21 +135,11 @@ form input:focus, form select:focus {
 }
 
 input.invalid {
-    border-color: red; 
+    border-color: red;
+    border-radius: 4px;
+    border-width: 2px;
+    outline: none;
 }
-
-#senha-botao img.green {
-    filter: hue-rotate(120deg);
-}
-
-#senha-botao img.gray {
-    filter: grayscale(100%);
-}
-#senha-botao img:hover {
-    transform: scale(1.1); /* Aumenta o tamanho do ícone ao passar o mouse */
-    transition: transform 0.2s ease; /* Adiciona uma transição suave */
-}
-
 select#perfis option {
     padding: 20px; 
 }

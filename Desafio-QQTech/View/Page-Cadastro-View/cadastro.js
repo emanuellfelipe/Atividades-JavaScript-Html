@@ -1,6 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
     var form = document.querySelector('form');
 
+    // Adicionando a verificação de campos vazios no evento input
+    var allInputs = document.querySelectorAll('input');
+    allInputs.forEach(function(input) {
+        input.addEventListener('input', function() {
+            if (input.value.trim() === '') {
+                input.classList.add('invalid');
+            } else {
+                input.classList.remove('invalid');
+            }
+        });
+    });
+
     form.addEventListener('submit', function(event) {
         var inputs = document.querySelectorAll('input');
         var allValid = true;
@@ -9,8 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (input.value.trim() === '') {
                 allValid = false;
                 input.classList.add('invalid');
-            } else {
-                input.classList.remove('invalid');
             }
         });
 
@@ -18,17 +28,18 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault();
         }
     });
-
+    
     function togglePasswordVisibility() {
         const senhaInput = document.getElementById('senha');
         const eyeIcon = document.getElementById('eye-icon');
 
         if (senhaInput.type === 'password') {
             senhaInput.type = 'text';
-            eyeIcon.src = 'C:\Users/980235\Desktop\Atividades-QQTech-Aulas\Desafio-QQTech\View\Icones-Imagens-View\eye-icon-green.png';
+            eyeIcon.src = 'C:/Users/980235/Desktop/Atividades-QQTech-Aulas/Desafio-QQTech/View/Icones-Imagens-View/eye-icon-green.png';
+
         } else {
             senhaInput.type = 'password';
-            eyeIcon.src = 'C:\Users/980235\Desktop\Atividades-QQTech-Aulas\Desafio-QQTech\View\Icones-Imagens-View\eye-icon-green.png';
+            eyeIcon.src = 'C:\\Users\\980235\\Desktop\\Atividades-QQTech-Aulas\\Desafio-QQTech\\View\\Icones-Imagens-View\\eye-icon.png';
         }
     }
 
